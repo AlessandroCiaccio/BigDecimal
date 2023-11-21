@@ -30,7 +30,7 @@ public class Main {
             case MULTIPLICATION:
                 return number1.multiply(number2);
             case DIVISION:
-                return number1.divide(number2, RoundingMode.HALF_EVEN);
+                return number1.divide(number2, RoundingMode.HALF_UP);
             case MIN:
                 return number1.min(number2);
             case MAX:
