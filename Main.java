@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +30,7 @@ public class Main {
             case MULTIPLICATION:
                 return number1.multiply(number2);
             case DIVISION:
-                return number1.divide(number2);
+                return number1.divide(number2, RoundingMode.HALF_EVEN);
             case MIN:
                 return number1.min(number2);
             case MAX:
